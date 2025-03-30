@@ -49,21 +49,21 @@ class MainActivity : ComponentActivity() {
                )
 
                Row {
-                   Button(onClick = {
-                   /*TODO*/ }) {
-                       Text(text = "Suggest")
-                   }
-                   Button(onClick = { /*TODO*/
-                       timeofday = ""
-                       suggested_meals = ""
-                   }) {
-                       Text(text = "Reset")
-                   }
+                   Button(onClick = {/*TODO*/
+                        suggested_meals = when (timeofday){
+                            "Morning" -> "Rise and dine:Mabele porridge with peanbutter OR Yoghurt and granola"
+                            "Midmorning" -> "Tummy teaser:Any fruit of your choice"
+                            "Afternoon" -> "Munch break:Green salad with chicken OR Chicken sandwich with wholewheat bread"
+                            "Midafternoon" -> "Snack Oclock:Dried fruit OR Vegetable sticks with hummus"
+                            "Dinner" -> "Nightfall grub:fish and roasted potatoes OR Bean stew with roti"
+                            "Afterdinner" -> "Starlight bites:Popcorn OR Flavoured tea"
+                             else-> "Invalid input. Please try again."
+}                                      }
+                           {
+                               Row {
+                               }
+                                   Text(text = "Suggest")
+})                        }
                }
-              Text(text = "Your suggested meal $timeofday is:")
-               Text(text = "$suggested_meals")
-           }
-        }
+           } }
     }
-}
-
