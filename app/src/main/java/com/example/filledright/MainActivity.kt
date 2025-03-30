@@ -49,15 +49,19 @@ class MainActivity : ComponentActivity() {
                )
 
                Row {
-                   Button(onClick = { /*TODO*/ }) {
+                   Button(onClick = {
+                   /*TODO*/ }) {
                        Text(text = "Suggest")
                    }
-                   Button(onClick = { /*TODO*/ }) {
+                   Button(onClick = { /*TODO*/
+                       timeofday = ""
+                       suggested_meals = ""
+                   }) {
                        Text(text = "Reset")
                    }
                }
-               
-
+              Text(text = "Your suggested meal $timeofday is:")
+               Text(text = "$suggested_meals")
            }
         }
     }
