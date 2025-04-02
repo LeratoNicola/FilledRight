@@ -17,8 +17,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.example.filledright.ui.theme.FilledRightTheme
 
 class MainActivity : ComponentActivity() {
@@ -35,9 +38,18 @@ class MainActivity : ComponentActivity() {
                 
             }
             
-           Column {
-             Text(text = "Welcome to Filled Right. Assisting with your dietary needs")
-             Text(text = "Hello Hera. Excited to be with you on this journey")
+           Column(
+               horizontalAlignment = Alignment.CenterHorizontally,
+               modifier = Modifier.fillMaxSize()
+           ) {
+             Text(
+                 text = "Welcome to Filled Right. Assisting with your dietary needs.",
+                 fontSize = 30.sp,
+                 fontWeight = FontWeight.Black
+             )
+
+
+             Text(text = "Hello Hera. Excited to be with you on this journey.")
                
                OutlinedTextField(
                    value = timeofday , 
@@ -84,7 +96,7 @@ class MainActivity : ComponentActivity() {
                Text(text = "5)DinnerNightfall Grub")
                Text(text = "6)After-dinner-snack - Starlight Bites")
 
-               
+
                Text(text = "Your meal suggestions by $timeofday is:")
                Text(text = suggested_meals)
 
