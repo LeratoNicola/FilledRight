@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                            "Afternoon" -> "Chicken cajun salad (400kcal) OR Chicken sandwich with wholewheat bread (300kcal)"
                            "Mid-afternoon" -> "Dried fruit of your choice (480 kcal) OR Vegetable sticks with hummus (250 kcal)"
                            "Dinner" -> "Fish and roasted potatoes (393kcal) OR Bean stew with roti (450kcal)"
-                           "After dinner snack" -> "Popcorn (90kcal) OR Flavoured tea (2kcal)"
+                           "After-dinner-snack" -> "Popcorn (90kcal) OR Flavoured tea (2kcal)"
                            else -> "Invalid input. Please try again."
                        }
 
@@ -76,6 +76,14 @@ class MainActivity : ComponentActivity() {
                    }
                }
                
+               Text(text = "Meal Guide:")
+               Text(text = "1)Morning - Rise and Dine")
+               Text(text = "2)Mid-morning - Tummy Teaser")
+               Text(text = "3)Afternoon - Munch Break")
+               Text(text = "4)Mid-afternoon - Snack Oclock")
+               Text(text = "5)DinnerNightfall Grub")
+               Text(text = "6)After-dinner-snack - Starlight Bites")
+
                
                Text(text = "Your meal suggestions by $timeofday is:")
                Text(text = suggested_meals)
