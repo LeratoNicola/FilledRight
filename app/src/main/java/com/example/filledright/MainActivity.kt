@@ -72,7 +72,8 @@ class MainActivity : ComponentActivity() {
                        Text(text = "Enter time of day")
                    }
                )
-
+               Divider()
+               Spacer(modifier = Modifier.size(30.dp))
                Row {
                    Button(onClick = {
                        suggested_meals = when(timeofday) {
