@@ -5,8 +5,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
@@ -21,6 +24,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.filledright.ui.theme.FilledRightTheme
 
@@ -47,10 +51,12 @@ class MainActivity : ComponentActivity() {
                  fontSize = 30.sp,
                  fontWeight = FontWeight.Black
              )
+               Divider()
+               Spacer(modifier = Modifier.size(30.dp))
 
              Text(
                  text = "Hello Hera. Excited to be with you on this journey.",
-                 fontSize = 25.sp,
+                 fontSize = 20.sp,
                  fontWeight = FontWeight.Black
 
 
