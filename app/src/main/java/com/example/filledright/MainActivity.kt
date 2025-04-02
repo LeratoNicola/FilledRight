@@ -54,14 +54,18 @@ class MainActivity : ComponentActivity() {
                       Text(text = "Suggest")
 
                    }
-                   Button(onClick = { /*TODO*/ }) {
+                   Button(onClick = {
+                       timeofday = ""
+                       suggested_meals = ""
+                   }) {
                        Text(text = "Reset")
 
                    }
                }
                
                
-               Text(text = "Your meal suggestions is: by $timeofday is /n/n $suggested_meals")
+               Text(text = "Your meal suggestions by $timeofday is:")
+               Text(text = suggested_meals)
 
 }                                      }
 
