@@ -48,8 +48,13 @@ class MainActivity : ComponentActivity() {
                  fontWeight = FontWeight.Black
              )
 
+             Text(
+                 text = "Hello Hera. Excited to be with you on this journey.",
+                 fontSize = 25.sp,
+                 fontWeight = FontWeight.Black
 
-             Text(text = "Hello Hera. Excited to be with you on this journey.")
+
+             )
                
                OutlinedTextField(
                    value = timeofday , 
@@ -88,7 +93,12 @@ class MainActivity : ComponentActivity() {
                    }
                }
                
-               Text(text = "Meal Guide:")
+               Text(
+                   text = "Meal Guide:",
+                   fontSize = 15.sp,
+                   fontWeight = FontWeight.Black
+
+                   )
                Text(text = "1)Morning - Rise and Dine")
                Text(text = "2)Mid-morning - Tummy Teaser")
                Text(text = "3)Afternoon - Munch Break")
@@ -97,7 +107,12 @@ class MainActivity : ComponentActivity() {
                Text(text = "6)After-dinner-snack - Starlight Bites")
 
 
-               Text(text = "Your meal suggestions by $timeofday is:")
+               Text(
+                   text = "Your meal suggestions by $timeofday is:",
+                   fontSize = 15.sp,
+                   fontWeight = FontWeight.Black
+
+               )
                Text(text = suggested_meals)
 
 }                                      }
