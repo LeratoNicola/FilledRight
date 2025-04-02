@@ -59,6 +59,9 @@ class MainActivity : ComponentActivity() {
 
                    }
                }
+               
+               
+               Text(text = "Your meal suggestions by $timeofday is /n/n $suggested_meals")
 
 }                                      }
 
