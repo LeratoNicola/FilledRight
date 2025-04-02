@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
                }
                
                
-               Text(text = "Your meal suggestions by $timeofday is /n/n $suggested_meals")
+               Text(text = "Your meal suggestions is: by $timeofday is /n/n $suggested_meals")
 
 }                                      }
 
