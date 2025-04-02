@@ -113,7 +113,7 @@ class MainActivity : ComponentActivity() {
                Text(text = "2)Mid-morning - Tummy Teaser")
                Text(text = "3)Afternoon - Munch Break")
                Text(text = "4)Mid-afternoon - Snack Oclock")
-               Text(text = "5)DinnerNightfall Grub")
+               Text(text = "5)Dinner - Nightfall Grub")
                Text(text = "6)After-dinner-snack - Starlight Bites")
                Divider()
                Spacer(modifier = Modifier.size(30.dp))
