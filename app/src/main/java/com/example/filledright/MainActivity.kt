@@ -50,7 +50,20 @@ class MainActivity : ComponentActivity() {
                )
 
                Row {
-                   Button(onClick = { /*TODO*/ }) {
+                   Button(onClick = {
+                       suggested_meals = when(timeofday) {
+                           "Morning" -> "Mabele porridge with peanutbutter (370kcal) OR Yoghurt and granola (355kcal)"
+                           "Mid-morning" -> "Any fruit of your choice (100kcal)"
+                           "Afternoon" -> "Chicken cajun salad (400kcal) OR Chicken sandwich with wholewheat bread (300kcal)"
+                           "Mid-afternoon" -> "Dried fruit of your choice (480 kcal) OR Vegetable sticks with hummus (250 kcal)"
+                           "Dinner" -> "Fish and roasted potatoes (393kcal) OR Bean stew with roti (450kcal)"
+                           "After dinner snack" -> "Popcorn (90kcal) OR Flavoured tea (2kcal)"
+                           else -> "Invalid input. Please try again."
+                       }
+
+
+
+                   }) {
                       Text(text = "Suggest")
 
                    }
