@@ -118,7 +118,7 @@ class MainActivity : ComponentActivity() {
                Divider()
                Spacer(modifier = Modifier.size(30.dp))
                Text(
-                   text = "Your meal suggestions by $timeofday is:",
+                   text = "Your meal suggestions for $timeofday is:",
                    fontSize = 15.sp,
                    fontWeight = FontWeight.Black
 
